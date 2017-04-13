@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>add organization</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div>
+  <h3> insert organization </h3>
+      <form method="POST" action="/add">
+          name:<input type="text" name="name"/>
+          category:<input type="text" name="category"/>
+         Longitude:<input type="text" name="longitude"/>
+         Latitude:<input type="text" name="latitude"/>
+         <input type="submit"/>
+      </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+ <h3> search organization byName </h3>
+   <form method="GET" action="/search">
+         Search By: name:<input type="text" name="name"/>
+             <input type="submit"/>
+      </form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div>
+ <h3> delete organization byName </h3>
+   <form method="POST" action="/delete">
+         Delete By: name:<input type="text" name="name"/>
+             <input type="submit"/>
+      </form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div>
+ <h3> update type of organization byName </h3>
+   <form method="POST" action="/update">
+         organization name:<input type="text" name="name"/>
+         new category of organization :<input type="text" name="category"/>
+
+             <input type="submit"/>
+      </form>
+</div>
+
+   </body>
+</html>
